@@ -1,0 +1,18 @@
+[
+    {
+        "tipo": "PanelSolar",
+        "nombre": "SolarMax 400",
+        "precio": 250000,
+        "stock": 10,
+        "potencia_w": 400,
+        "eficiencia": 21.5
+    },
+    {
+        "tipo": "PanelSolar",
+        "nombre": "SolarMini 100",
+        "precio": 90000,
+        "stock": 0,
+        "potencia_w": 100,
+        "eficiencia": 18.0
+    }
+]
