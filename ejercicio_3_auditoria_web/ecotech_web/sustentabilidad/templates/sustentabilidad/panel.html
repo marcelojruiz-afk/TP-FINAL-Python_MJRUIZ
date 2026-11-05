@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+</head>
+<body>
+    <h1>🌱 {{ titulo }}</h1>
+    <p><strong>Total de emisiones:</strong> {{ total_emisiones }} kg de CO₂</p>
+    <p><strong>Planta de mayor consumo:</strong> {{ planta_mayor_consumo }} ({{ consumo_mayor }} kWh)</p>
+
+    <h2>Historial de consumos</h2>
+    <ul>
+        {% for registro in registros %}
+            <li>{{ registro.planta }}: {{ registro.consumo_kwh }} kWh</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
