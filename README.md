@@ -37,7 +37,8 @@ Para probarlo (hay que entrar a la carpeta para que el JSON se guarde ahí):
 cd ejercicio_2_productos
 
 python productos.py
-cd..
+
+cd ..
 
 
 
@@ -56,3 +57,11 @@ python -m pytest
 Para ver la página:
 
 python manage.py runserver
+
+y después entrar a http://127.0.0.1:8000/panel/
+
+(Me apareció un aviso en rojo de "migrations", porque no usé base de datos, no es un error, la página funciona igual.)
+
+
+
+Saludos Profe.
