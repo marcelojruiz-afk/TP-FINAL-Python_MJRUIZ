@@ -7,7 +7,7 @@ def limpiar_registro_sensor(registro_raw):
     registro_limpio = {}
     registro_limpio["sensor_id"] = registro_raw.get("sensor_id", "").strip()
     registro_limpio["temperatura"] = float(str(registro_raw.get("temperatura", "0")).strip().upper().replace("C", ""))
-    registro_limpio["ubicacion"] = registro_raw.get("ubicacion") or "Sin ubicación"
+    registro_limpio["ubicacion"] = (registro_raw.get("ubicacion") or "").strip() or "Sin ubicación"
     return registro_limpio
 
 def generar_resumen_sensores(lista_sensores_limpios, umbral_temperatura):
